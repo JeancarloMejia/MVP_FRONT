@@ -148,7 +148,7 @@ function Dashboard() {
                         <span style={styles.itemDetails}>
                           <strong style={styles.itemQty}>{item.quantity}x</strong> {item.product_name}
                         </span>
-                        <span style={styles.itemSubtotal}>${item.subtotal}</span>
+                        <span style={styles.itemSubtotal}>S/.{item.subtotal}</span>
                       </li>
                     ))}
                   </ul>
@@ -156,7 +156,7 @@ function Dashboard() {
 
                 <div style={styles.totalRow}>
                   <span style={styles.totalLabel}>Total</span>
-                  <span style={styles.totalAmount}>${order.total_amount}</span>
+                  <span style={styles.totalAmount}>S/.{order.total_amount}</span>
                 </div>
 
                 <div style={styles.actions}>
